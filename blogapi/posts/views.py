@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from django.shortcuts import redirect
 #from rest_framework import generics, permissions
 
 from .models import Post
@@ -37,3 +38,8 @@ class PostViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = get_user_model().objects.all()
     serializer_class = UserSerializer
+
+
+def my_view(request):
+    
+    return redirect('/api/v1/')

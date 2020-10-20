@@ -5,6 +5,7 @@ from rest_framework.routers import SimpleRouter
 #from .views import PostList, PostDetail, UserList, UserDetail
 from .views import UserViewSet, PostViewSet
 
+
 """ 
 urlpatterns = [
     path('users/', UserList.as_view()),
